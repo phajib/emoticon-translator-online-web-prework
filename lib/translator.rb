@@ -14,12 +14,12 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
   answer = emoticon_hash["get_emoticon"][emoticon]
-  #answer ? answer : return "Sorry, that emoticon was not found"
-  if answer
-    answer
-  else
-    return "Sorry, that emoticon was not found"
-  end
+  answer ? answer : return "Sorry, that emoticon was not found"
+  #if answer
+  #  answer
+  #else
+  #  return "Sorry, that emoticon was not found"
+  #end
 end
 
 def get_english_meaning
