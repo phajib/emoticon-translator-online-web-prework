@@ -14,7 +14,7 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
   answer = emoticon_hash["get_emoticon"][emoticon]
-  answer == nil ? return "Sorry, that emoticon was not found" : answer
+  answer == nil ? "Sorry, that emoticon was not found" : answer
   #if answer
   #  answer
   #else
