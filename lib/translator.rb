@@ -12,7 +12,7 @@ def load_library(yml)
 end
 
 def get_japanese_emoticon(yml, emoticon)
-  yml = YAML.load_file("./lib/emoticons.yml")
+  #yml = YAML.load_file("./lib/emoticons.yml")
   emoticon_hash = load_library(yml)
   answer = emoticons["get_emoticon"][emoticon]
   #answer ? answer : return "Sorry, that emoticon was not found"
