@@ -10,7 +10,7 @@ def load_library(yml)
     emoticons["get_meaning"][jap] = meaning
     emoticons["get_emoticon"][eng] = jap
   end
-
+  emoticons
 end
 
 def get_japanese_emoticon
