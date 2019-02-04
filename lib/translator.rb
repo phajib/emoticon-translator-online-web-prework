@@ -16,7 +16,7 @@ def get_japanese_emoticon(yml, emoticon)
   yml = YAML.load_file("./lib/emoticons.yml")
 
   answer = emoticons["get_emoticon"][emoticon]
-  answer? answer : "Sorry, that emoticon was not found"
+  !answer ?  puts "Sorry, that emoticon was not found" : answer 
 end
 
 def get_english_meaning
