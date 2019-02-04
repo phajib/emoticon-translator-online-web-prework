@@ -5,8 +5,11 @@ def load_library(yml)
   yml
 
   emoticons = {"get_meaning":{}, "get_emoticon":{}}
-  yml.each do |eng, jap|
-    emoticons
+  yml.each do |meaning, translation|
+    eng, jap = translation
+    emoticons["get_meaning"][jap] = meaning
+    emoticons["get_emoticon"][eng] = jap
+  end
 
 end
 
