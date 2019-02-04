@@ -4,7 +4,7 @@ def load_library(yml)
   yml = YAML.load_file("./lib/emoticons.yml")
   yml
 
-  emoticons = {"get_meaning":{}, "get_emoticon":{}}
+  emoticons = {"get_meaning"=>{}, "get_emoticon"=>{}}
   yml.each do |meaning, translation|
     eng, jap = translation
     emoticons["get_meaning"][jap] = meaning
